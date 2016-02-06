@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Bubble Sort</title>
+        
+        <meta charset="utf-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="description" content="A jouney of a thousand miles begins with a single step." />
+                    </head>
+    
+    
+    <body>
+        <div style="line-height:120%;">
+            <!-- Main jumbotron for a primary marketing message or call to action -->
+            <h2>Bubble Sort</h2>
+            <h3>Introduction</h3>
+            <p>Bubble sort is a simple sorting algorithm that goes through a list by comparing each pair of adjacent elements and swaps them if they are in the wrong order. It passed through the list until no more swaps are needed.
+            </p>
+            <h3>Algorithm</h3>
+            <ol>
+                <li>Take the first element in the list and compare it to the second element. If they are in the wrong order swap the pair around and move to step 2. If they are in the correct order move to step 3</li>
+                <li>Take the same element and compare it to the element to its right. If they are in the wrong order swap the pair around and move to step 4.</li>
+                <li>Take the next element in the list and compare it to the element to its right. If they are in the wrong order swap the pair around and move to step 4.</li>
+                <li>If the elements are in order move to the next element and go to step 2. If there is no element to the right return to the first element return to step 1</li>
+            </ol>
+        <h3>Step by step example</h3>
+            <p>Order the list of numbers: ( 8 2 5 1 4 )</p>
+            <p><b>First Pass</b></p>
+                <div style="line-height:25%;">
+                    <p>( <b>8 2</b> 5 1 4 ) &#8594; ( <b>2 8</b> 5 1 4 ) The algorithm compares 8 and 2 and swaps them around since 8 > 2</p>
+                    <p>( 2 <b>8 5</b> 1 4 ) &#8594; ( 2 <b>5 8</b> 1 4 ) We swap here since 8 > 5 </p>
+                    <p>( 2 5 <b>8 1</b> 4 ) &#8594; ( 2 5 <b>1 8</b> 4 ) 8 > 1 so we swap again</p>
+                    <p>( 2 5 1 <b>8 4</b> ) &#8594; ( 2 5 1 <b>4 8</b> )</p>
+                </div>
+            <p><b>Second Pass</b><p>
+                <div style="line-height:25%;">
+                    <p>( <b>2 5</b> 1 4 8 ) &#8594; ( <b>2 5</b> 1 4 8 ) 2 and 5 are already in order so the algorithm does not swap them </p>
+                    <p>( 2 <b>5 1</b> 4 8 ) &#8594; ( 2 <b>1 5</b> 4 8 )</p>
+                    <p>( 2 1 <b>5 4</b> 8 ) &#8594; ( 2 1 <b>4 5</b> 8 )<p>
+                    <p>( 2 1 4 <b>5 8</b> ) &#8594; ( 2 1 4 <b>5 8</b> )</p>
+                </div>
+            <p><b>Third Pass</b></p>
+                <div style="line-height:25%;">
+                    <p>( <b>2 1</b> 4 5 8 ) &#8594; ( <b>1 2</b> 4 5 8 )</p>
+                </div>
+                <br /><hr>
+            <h3>Try it out yourself!</h3>
+            <p>Write the bubble sort algorithm that sorts numbers in ascending order</p>
+                <div style="line-height:25%;">
+                    <br /><p>Sample input</p>
+                    <p>2 1 4 5 4</p>
+                    <br /><p>Sample output</p>
+                    <p>2 1 4 4 5</p>
+                    <br /><br /><p>Sample input</p>
+                    <p>5 4 3 2 1<p>
+                    <br /><p>Sample output</p>
+                    <p>1 2 3 4 5</p>
+                </div>
+            <br />
+            
+            <br />
+            <textarea rows="10" cols="70">Enter your code here...</textarea>
+            <br />
+            
+            <input type="submit" value="Run Code"><input type="submit" value="Submit">
+            
+            <footer>
+                <hr>
+                <p>&copy; University College London, Coding Curriculem, Group T </p>
+            </footer>
+            </div> <!-- /container -->
+            
+            
+            <!-- Bootstrap core JavaScript
+             ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+            <script src="../../dist/js/bootstrap.min.js"></script>
+            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+        </div>
+    </body>
+</html>
