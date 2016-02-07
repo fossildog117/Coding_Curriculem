@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Euclidean algorithm</title>
+
+        <meta charset="utf-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="description" content="A jouney of a thousand miles begins with a single step." />
+                    </head>
+
+	<body>
+		<div style="line-height:120%;">
+			<h2>Finding the greatest common divisor (GCD)</h2>
+			<h3>Introduction to Euclid's Algorithm</h3>
+      <p>The Eucideal algorithm is a method used to computer the greatest common factor between two or more numbers. It is often used to simplify fractions to their simplest form and is applied to many other fields in computing and mathematics.</p>
+      <h3>Algorithm</h3>
+      <p>Find the GCD of A and B where A > B</p>
+        <ol>
+          <li>If A = 0 or B = 0 return 0. Otherwise go to step 2.</li>
+          <li>If A > B calculate A/B, otherwise calculate B/A. Let R be the remainder. If R = 0 go to step 4</li>
+          <li>If A > B, let A = R otherwise let B = R</li>
+          <li>If A > B then B = GCD otherwise A = GCD</li>
+        </ol>
+        <p>Challenge: Can you find the greatest common divisor for more than 2 numbres?</p>
+      	<h3>Step by step example</h3>
+        <p>Find the GCD of 54 and 12</p>
+        <p>
+          54 > 12 so compute 54/12 = 4 with remainder 6. R = 6
+        </p>
+        <p>
+          12 > 6 so compute 12/6 = 2 with remainder 0. R = 0
+        </p>
+        <p>
+          6 < 12 and R = 0 so GCD = 6
+        </p>
+        <hr>
+        <h3>Try it yourself!</h3>
+        <p>
+          Sample input <br /> 24 9 <br /> Sample output<br /> 3
+        </p>
+        <p>
+          Sample input <br /> 24 18 2  <br /> Sample output<br /> 2
+        </p>
+      <br />
+      <br />
+      <textarea rows="10" cols="70">Enter your code here...</textarea>
+      <br />
+
+      <input type="submit" value="Run Code"><input type="submit" value="Submit">
+		</div>
+	</body>
+</html>
