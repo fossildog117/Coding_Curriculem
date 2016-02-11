@@ -19,4 +19,7 @@ function clearCanvas()
     var c = document.getElementById("drawing");
     var ctx = c.getContext("2d");
     ctx.clearRect(0, 0, 400, 400);
+    ctx.fillStyle = "#FAEBD7";
+    ctx.fillRect(0,0,400,400);
+    ctx.fillStyle = "#000000";
 }
