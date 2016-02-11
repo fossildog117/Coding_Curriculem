@@ -89,7 +89,7 @@
     <p>Try to write the bubble sort algorithm in Ruby in the form bubbleSort(array). It will be tested with a couple of different lists so you can see if it works, the results will be printed below.</p>
     <div class="panel panel-primary">
         <div class="panel-heading">
-            <h3 class="panel-title">CodeBox <button type="button" onclick="Opal.eval(document.getElementById('sortcode').value);" class="btn btn-default btn-default-lg codebutton">
+            <h3 class="panel-title">CodeBox <button type="button" onclick="Opal.eval(document.getElementById('sortcode').value);Opal.Object.$printOutput();" class="btn btn-default btn-default-lg codebutton">
                 <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
             </button></h3>
         </div>
@@ -98,9 +98,20 @@
         </div>
         <div class="panel-footer">
             <p>Output: </p>
-            <p id="output"></p>
+            <pre id="output"></pre>
         </div>
     </div>  
+    <script type="text/ruby">
+        $arr = [[5,3,7,3,7,3,99,32,2],[8,45,3,2,4],[1,7,4,3,2],[4,6,4,23,6,3,6,3]]
+
+        def printOutput
+            output = ""
+            $arr.each { |array|
+            output = output + array.inspect + "  ->  " + bubbleSort(array).inspect + "\n"
+            }
+            %x{document.getElementById('output').innerHTML = #{output};}
+        end
+    </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
