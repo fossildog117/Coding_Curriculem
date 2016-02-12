@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lesson- Loops</title>
+</head>
+
+<body>
+
+  <h1>Lesson- Loops</h1>
+  <h2>Loops</h2>
+
+  <p>Loops allow us to carry out iteration which enables us to execute a sequence of statements repeatedly depending on whether a particular condition is satisfied. 
+  Looping can be carried out in Ruby using while, for, until and each loops.</p>
+  
+  <h4>While Loops</h4>
+  
+  <p>The while loop will execute a statement or a sequence of statements continuously provided a particular condition is true. 
+  The while loop can be executed zero or more times. </p>
+  
+  <p>When the condition is true, the loop is entered and the statements within the loop are executed. Once the statements have been executed, the loop condition is once again evaluated and if it is true, the program statements are executed once again until the condition evaluates to false. </p>
+  <p>The code below prints numbers from 0 to 2 each on a new line.</p>
+  
+  <h5>Example</h5>
+  
+  <pre>count=0                                                #assigns count variable a value of 0.
+while count < 3                                        #loop executed while count less than 3.
+    puts "#{count}"                                    #prints the value of thcount variable.
+    count +=1                                          #increases the value assigned to count by 1.
+end</pre>
+
+<p>The statement 'count+=1' prevents an infinite loop which would otherwise cause the program to crash. If the condition for the loop is never false, then an infinite loop will occur. Once the condition evaluates to false, the execution of the program continues with the statement following the loop. In Ruby, statements are grouped by using 'end' statements. The general syntax for while loops is shown below.</p>
+
+<pre>
+while condition
+    Statement(s)  
+end </pre>
+
+ <h4>Break Statements</h4>
+<p>One way to exit from a loop and to stop the execution of its statements is to use a break statement. The example below prints the string 'Hello space' once. The break statement means that the while loop will only be executed once.</p>
+
+<h5>Example</h5>
+<pre>count = "Hello Space"
+while true
+    puts "#{count}"
+    break
+end</pre>
+
+<h4>Until Loops</h4>
+<p>The until loop is very similar to the while loop. You give a variable an initial value and then in the until statement you state the condition for the loop. In the example below, we used count= =3. One of the statements of the loop must be increasing the value of the variable.</p>
+<h5>Example</h5>
+<pre>count=0
+until count= =3                               # = = is the equality test and not an assignment
+  count+=1                                      #increases the value of variable count by 1.
+end
+puts "#{count}"</pre>
+<p>The block of statements in the loop above will be executed until count equals 3. The code above increments the count variable until it equals 3. Then the loop ends and it prints the value of count which is 3.</p>
+
+
+<h4>For loops</h4>
+<p>For loops are used when you want to repeatedly execute a sequence of statements a number of times counting up or iterating through a data structure.</p>
+<p>The bracketed expression (1..n) is the range. If we use two dots, it includes the highest number in the range and the loop repeats n times. The use of three dots in (1...n) means the loop iterates n-1 times (Ruby excludes the final number in x).</p>
+<pre>for x in (1..n)                      # x represents a variable
+    Statement(s)
+end                                  # Remember to add 'end'</pre>
+
+<p>The example below will print x for each number in the range 1- 14. It prints all the numbers for 1 to 14, each on a new line. Notice it starts from 1 and goes up to and including 14.</p>
+<h5>Example</h5>
+<pre>for x in (1..14)
+    puts "#{x}"
+end</pre>
+
+<h4>Next</h4>
+<p>We can skip over particular steps in the execution of a loop by using the 'next' keyword. The example below prints even numbers in the for loop. If the remainder of count divided by 2 is 1, count is odd and the loop goes to the next iteration (increases count by 1). The code below outputs 2, 4, 6, 8 and 10.</p>
+<h5>Example</h5>
+<pre> for count in 1..10                  #1-10 inclusive
+    next if count%2==1               #uses the modulo operator to ensure the value of count is  odd
+    puts "#{count}"                  #prints the even value of count
+end </pre>
+
+<h4>Iterators</h4>
+<p>An iterator can be used to repeat an action. It is a method that repeatedly executes a sequence of statements (block of code). </p>
+
+<h4>Loop Method</h4>
+<p>The loop method is a simple iterator which executes an infinite loop. In the example below, it prints "I love Ruby!" infinitely many times. The statements to be repeatedly executed are written inside the curly braces.</p>
+
+<h5>Example</h5>
+<pre> loop {puts "I love Ruby"} </pre>
+<p> You can replace the curly braces in a loop method with the keywords 'do' and 'end' to mark  the start and end of statements to be executed repeatedly. An example using do and end keywords is shown below:</p>
+
+<h5>Example</h5>
+<pre>count=0
+loop do                                  #'do' keyword marks the start of the loop
+    count+=1                             #increment operator
+    puts "#{count}"                      #print value of count
+    break if count==3                    #continue loop till count equals 3
+end                                      #'end' keyword marks the end of the loop</pre>
+<p>The code above prints the values 1, 2 and 3. The break keyword ends the loop as soon as its condition is met.<p>
+
+<h4>.times iterator</h4>
+<p>The .times method functions in similar way to the for loop. It can be used to execute a task or block of statements on each item a specified number of times. The example below will print out the statement "I love space" 10 times.</p>
+<h5>Example</h5>
+<p>10.times{puts "I love space"}</p>
+<p>Below is another example of the .times method. It iterates the block of statements 5 times using values from 0 to 4 (5-1). The code below print  0, 1, 2 ,3 and 4. We have used the keywords do and end to mark the start and end of the loop. Inside the double lines( | |), we include the variable name.</p>
+<h5>Example</h5>
+<pre>
+count=0                                      #intialise variable count to value 0
+5.times do |count|                       
+    puts "#{count}"                          #print count
+end</pre>
+ 
+  
+
+  
+</body>
+</html>
