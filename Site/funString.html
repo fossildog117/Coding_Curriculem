@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://cdn.opalrb.org/opal/current/opal.js"></script>
+    <script src="http://cdn.opalrb.org/opal/current/opal-parser.js"></script>
+    <script type="text/javascript">Opal.load('opal-parser')</script>
+    <title>Fun Strings!</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            padding: 20px 50px; }
+
+        .examplecode {
+            margin: 20px 20px;
+            background-color: #262626;
+            color: #ffffff;
+            padding: 10px 10px; }
+
+        .codebutton {
+            display:inline;
+            margin: 0 0 0 auto; }
+
+        .graphic {
+            text-align: center; }
+
+        .indent1 {
+            text-indent: 2em; }
+    </style>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <div class="page-header">
+        <h1>Fun Strings!</h1>
+    </div>
+
+    <div>
+
+        <p>A string is a normal word that can be processed by a computer. A great aspect of Ruby is that processing strings in this language is super simple!</p>
+        <br />
+        <br />
+        <p>Here we have declared a few variables as Strings and then joined them together</p>
+        <div class="panel panel-default">
+            <div class="panel-body examplecode">
+                <p>my_eyes = "brown"</p>
+                <p>my_hair = "black"</p>
+                <p>my_features = "I have " + my_eyes + " eyes and " + my_hair + " hair"</p>
+                <br />
+                <p>
+                  puts "#{my_features}"
+                </p>
+            </div>
+            <div class="panel-footer">
+                <p>This will make the computer print a line saying "I have brown eyes and black hair"</p>
+            </div>
+        </div>
+
+        <p>
+          Ruby also has a cool feature that allows us to choose certain parts of a string if we need!
+        </p><br />
+
+        <div class="panel panel-default">
+            <div class="panel-body examplecode">
+                <p>greetings = "hello world"</p><br />
+                <p>greetings[0] # => "h"</p><br />
+                <p>greetings[0,2] # => "hel"</p><br />
+                <p>
+                  greeteings[0..2] # => "hel"
+                </p><br />
+                <p>
+                  my_features[7..16] # => brown eyes
+                </p><br />
+            </div>
+        </div>
+        <br />
+        <p>
+          Challenge: Create a list of features and join them into one string, them make the computer select certain features from that new string.
+        </p>
+        <br />
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">CodeBox <button type="button" onclick="Opal.eval(document.getElementById('drawcode').value);" class="btn btn-default btn-default-lg codebutton">
+                    <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                </button></h3>
+            </div>
+            <div class="panel-body">
+                <textarea name="codebox" class="form-control" rows="5" id="drawcode"></textarea>
+            </div>
+            <div class="panel-footer">
+                <p>Output: </p>
+                <pre id="output"></pre>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
