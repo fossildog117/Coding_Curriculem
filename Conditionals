@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Unit 3: Conditionals</title>
+</head>
+<body>
+
+<h1>If statements</h1>
+<p>If statements are used to make sure that the program only does something if certain conditions are met.</p>
+<p>For example:</p>
+<p><b>a = 6 </b> </p>
+<p><b>b = 5 </b> </p>
+<p><b>if a + b == 11 </b> </p>
+<p><b>puts “Hello Spaceman” </b></p>
+<p>end</p>
+<p> Since a + b = 5 + 6 = 11, “Hello Spaceman” will be printed to the console on a new line. The “end” is just there to highlight the end of the if clause</p>
+<p>You may be wondering why two equals signs were used for the if statement. This means that the program is comparing the two values. In this instance it is comparing the result of a + b against 11. </p>
+<p>There are several other “comparators” which can be used in Ruby:</p>
+<ul>
+ <li> == (Check if the values either side are equivalent) </li>
+ <li> != (Check if the values either side are unequal) </li>
+ <li> <  (Check if the value on the left is strictly less than the value on the right)
+ <li> <= (Check if the value on the left is less than or equal to the value on the right) </li>
+ <li> >  (Check if the value on the left is strictly greater than the value on the right)
+ <li> >= (Check if the value on the left is greater than or equal to the value on the right) </li>
+<p>We can also provide alternate options for the program if the initial condition isn’t met
+ 
+
+</body>
+</html>
+
+
