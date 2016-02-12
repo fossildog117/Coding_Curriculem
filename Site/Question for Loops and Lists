@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Questions- Loops & Arrays</title>
+</head>
+
+<body>
+
+  <h1>Questions- Loops & Arrays</h1>
+  
+<h4>Question 1</h4>
+<p>By using a for loop, print the sum of integers between 1 and 10. Repeat this task using a while loop. Output should be 55.</p>
+
+<h4>Question 2</h4>
+<p>Use loops(.each method) to print the sum of the elements from the array below. Output should be 289.</p>
+<pre>num=[23,45,67,89,65]</pre>
+
+<h4>Question 3</h4>
+<p>Square every element in the square array and print the value. Output should be 400, 2500, 100, 25 and 4. (Hint: use for loops)</p>
+<pre>square= [20,50,10,5,2]</pre>
+  
+<h4>Question4</h4>
+<p>Remove the item 'shuttle' from the array space below and then add 'aliens' to the array so it becomes the 3rd item in the array. Then print the items from the 2nd item in the array to the 4th item inclusive (hint: use slicing method). Final output should be ['astronaut','aliens','moon']</p>
+<pre>space=['rocket', 'shuttle', 'astronaut', 'moon', 'gravity']</pre>
+
+<h4>Question 5</h4>
+<p>Print out the first 8 Fibonacci numbers: 0, 1, 1, 2, 3, 5, 8, 13 using loops.</p>
+
+  
+</body>
+</html>
