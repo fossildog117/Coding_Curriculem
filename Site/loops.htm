@@ -59,15 +59,15 @@
         <div class="panel panel-default">
             <div class="panel-body examplecode">
              <div class="panel-body examplecode">
-               <pre>count=0                                                #assigns count variable a value of 0.
-while count < 3                                        #loop executed while count less than 3.
-    puts "#{count}"                                    #prints the value of thcount variable.
-    count +=1                                          #increases the value assigned to count by 1.
-end</pre>
+               <p>count=0  </p>                                             
+<p>while count < 3          </p>                            
+   <p class="indent1"> puts "#{count}"</p>                                    
+    <p class="indent1">count +=1          </p>                                
+<p>end</p>
             </div>
             </div>
             <div class="panel-footer">
-                <p>Example: The code above prints numbers from 0 to 2 each on a new line.</p>
+                <p>Example: The code above prints numbers from 0 to 2 each on a new line. It assigns count variable the value of 0. The loop is then executed while count is less than 3. It prints the values of the count variable whilst increasing the value assigned to count.</p>
             </div>
 			</div>
 			
@@ -76,10 +76,10 @@ end</pre>
 		
         <div class="panel panel-default">
             <div class="panel-body examplecode">
-                <pre>
-while condition
-    Statement(s)  
-end </pre>
+                
+<p>while condition</p>
+   <p class="indent1"> Statement(s)  </p>
+<p>end </p>
             </div>
             <div class="panel-footer">
                 <p>Syntax used in while loops</p>
@@ -91,11 +91,11 @@ end </pre>
 <p>One way to exit from a loop and to stop the execution of its statements is to use a break statement. The example prints the string 'Hello space' once. The break statement means that the while loop will only be executed once.</p>
         <div class="panel panel-default">
             <div class="panel-body examplecode">
-               <pre>count = "Hello Space"
-while true
-    puts "#{count}"
-    break
-end</pre>
+               <p>count = "Hello Space"</p>
+<p>while true</p>
+    <p class="indent1">puts "#{count}"</p>
+ <p class="indent1">   break</p>
+<p>end</p>
             </div>
             <div class="panel-footer">
                 <p>Example: Break Statements</p>
@@ -108,14 +108,14 @@ end</pre>
 		
 		 <div class="panel panel-default">
             <div class="panel-body examplecode">
-        <pre>count=0
-until count= =3                               # = = is the equality test and not an assignment
-  count+=1                                      #increases the value of variable count by 1.
-end
-puts "#{count}"</pre>
+        <p>count=0</p>
+<p>until count= =3      </p>                         
+ <p class="indent1">count+=1 </p>                                  
+<p>end</p>
+<p>puts "#{count}"</p>
             </div>
             <div class="panel-footer">
-                <p>Example: Unitl Loops</p>
+                <p>Example: Unitl Loops. It uses the equilty test operator(= =) and increases the value of count by 1.</p>
             </div>
         </div>
         
@@ -130,12 +130,12 @@ puts "#{count}"</pre>
 		 
 		 <div class="panel panel-default">
             <div class="panel-body examplecode">
-            <pre>for x in (1..n)                      # x represents a variable
-    Statement(s)
-end                                  # Remember to add 'end'</pre>
+            <p>for x in (1..n)</p>                      
+   <p class="indent1"> Statement(s)</p>
+<p>end    </p>                             
             </div>
             <div class="panel-footer">
-                <p>For loop syntax</p>
+                <p>For loop syntax. x represents a variable and remember to add the 'end' keyword.</p>
             </div>
         </div>
         
@@ -144,9 +144,9 @@ end                                  # Remember to add 'end'</pre>
 		
 		<div class="panel panel-default">
             <div class="panel-body examplecode">
-     <pre>for x in (1..14)
-    puts "#{x}"
-end</pre>
+     <p>for x in (1..14)</p>
+    <p class="indent1">puts "#{x}"</p>
+<p>end</pre>
             </div>
             <div class="panel-footer">
                 <p>Example: For loops </p>
@@ -160,13 +160,13 @@ end</pre>
 		
 		<div class="panel panel-default">
             <div class="panel-body examplecode">
-           <pre> for count in 1..10                  #1-10 inclusive
-    next if count%2==1               #uses the modulo operator to ensure the value of count is  odd
-    puts "#{count}"                  #prints the even value of count
-end </pre>
+           <p> for count in 1..10  </p>                
+    <p class="indent1">next if count%2==1 </p>             
+    <p class="indent1">puts "#{count}"  </p>                
+<p>end </p>
             </div>
             <div class="panel-footer">
-                <p>Example: Next keyword</p>
+                <p>Example: Next keyword. It uses the modulo operator to ensure the value of count is odd. It prints the even values of count.</p>
             </div>
         </div>
 		<br />
@@ -180,7 +180,7 @@ end </pre>
 		
 		<div class="panel panel-default">
             <div class="panel-body examplecode">
-              <pre> loop {puts "I love Ruby"} </pre>
+              <p> loop {puts "I love Ruby"} </p>
             </div>
             <div class="panel-footer">
                 <p>Example: Loop method</p>
@@ -191,18 +191,18 @@ end </pre>
 		<br />
 		<div class="panel panel-default">
             <div class="panel-body examplecode">
-          <pre>count=0
-loop do                                  #'do' keyword marks the start of the loop
-    count+=1                             #increment operator
-    puts "#{count}"                      #print value of count
-    break if count==3                    #continue loop till count equals 3
-end                                      #'end' keyword marks the end of the loop</pre>
+          <p>count=0</p>
+<p>loop do    </p>                             
+   <p class="indent1"> count+=1</p>                             
+    <p class="indent1">puts "#{count}"  </p>                    
+    <p class="indent1">break if count==3   </p>                 
+<p>end </p>                                   
             </div>
             <div class="panel-footer">
                 <p>Example: Loop method with do and end keywords</p>
             </div>
         </div>
-<p>The code above prints the values 1, 2 and 3. The break keyword ends the loop as soon as its condition is met.<p>
+<p>The code above prints the values 1, 2 and 3. The break keyword ends the loop as soon as its condition is met. An increment operator is used.<p>
 
 <br />
 
@@ -222,14 +222,13 @@ end                                      #'end' keyword marks the end of the loo
 				
 				<div class="panel panel-default">
             <div class="panel-body examplecode">
-<pre>
-count=0                                      #intialise variable count to value 0
-5.times do |count|                       
-    puts "#{count}"                          #print count
-end</pre>
+<p>count=0                                      
+<p>5.times do |count| </p>                      
+   <p class="indent1"> puts "#{count}"    </p>                     
+<p>end</p>
             </div>
             <div class="panel-footer">
-                <p>Example: .times iterator with do and end keywords</p>
+                <p>Example: .times iterator with do and end keywords. Variable count is initialised to value 0</p>
             </div>
         </div>
 		
