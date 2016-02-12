@@ -1,4 +1,31 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://cdn.opalrb.org/opal/current/opal.js"></script>
+    <script src="http://cdn.opalrb.org/opal/current/opal-parser.js"></script>
+    <script type="text/javascript">Opal.load('opal-parser')</script>
+    <title>Learn Ruby</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            padding: 20px 50px; }
+        .examplecode {
+            margin: 20px 20px;
+            background-color: #262626;
+            color: #ffffff;
+            padding: 10px 10px; }
+        .codebutton {
+            display:inline;
+            margin: 0 0 0 auto; }
+        .graphic {
+            text-align: center; }
+    </style>
 <html>
 <head>
 <title>Unit 3: Conditionals</title>
@@ -23,7 +50,8 @@
  <li> <= (Check if the value on the left is less than or equal to the value on the right) </li>
  <li> >  (Check if the value on the left is strictly greater than the value on the right)
  <li> >= (Check if the value on the left is greater than or equal to the value on the right) </li>
-<p>We can also provide alternate options for the program if the initial condition isn’t met
+<p>We can also provide alternate options for the program if the initial condition isn’t met using the <b>else</b> or <b>elseif</b> functions.</p>
+<p>For example: 
  
 
 </body>
