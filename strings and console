@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Unit 2:Strings and the Console</title>
+</head>
+<body>
+
+<h1>Strings and Output</h1>
+<p>Strings are a type of variable, like integers. A string is a series (or string) of characters. In Ruby they’re they’re kept within quotation marks.</p>
+<p>For example: <b>a = “Spaceship”.</b> </p>
+<p>In this case, you are declaring a string called a which has the content “Spaceship”. Note that if you create a string and it only contains numbers, you can perform calculations with it due to the fact that it is a string. </p>
+<p>N.B: To convert another variable to a string, use the function ‘to_s’.</p>
+
+<p>To print something to the screen, use the “puts” function. </p>
+<p>For example: <b>puts“Spaceship”</b> would output on the Hello on the console.</p>
+<p>In order to output a variable you can still use the <b>“puts”</b> function</p>
+<p>Following on from an earlier function:</p>
+<p><b>a = “Spaceship”</b> </p>
+<p><b>puts a </b> </p>
+<p>The output will simply be Spaceship</p>
+<p>N.B: The “puts” function automatically produces a new line</p>
+
+<h2>Reading what the user says</h2>
+<p>Some programs need to be able to read and respond to something that the user says or generally receive and understand data.</p>
+<p>In order to do this, you have to use the <b> “gets”</b> function </p> 
+<p>To use the gets function you have to declare that a variable is the input.</p>
+<p>For example: <b>a = gets.chomp</b></p>
+<p>Here, whatever the user enters will be stored as a string called <b>a</b>. Note that it will be stored as a string unless you choose to convert it to something else such as an integer. In order to convert something to an integer, use the <b>“to_i”</b> function on it. </p>
+
+
+
+</body>
+</html>
