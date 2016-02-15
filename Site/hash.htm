@@ -34,8 +34,8 @@
         </style>
 
         <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
     </head>
@@ -62,7 +62,7 @@
 		
 		    <p>The hash above is named 'd' and it has 3 'key and value' pairs. The key 'key1' points to the value 1, 'key2' to 2, and so on. We place a '=>' in between the key and value and ensure that each pair of key and value is separated by commas. The key is enclosed in quotes to represent it is a string. An empty pair of curly braces {} is an empty hash.</p>
             <p>Hashes are ideal for phone books because you can pair a name with a phone number and for login pages by pairing an e-mail address with a username.</p>
-            <br/>
+            <br />
             <h4>New Hash</h4>
             <p>You can create a new hash by using the 'Hash.new' method. We can assign a variable to Hash.new and this creates a new empty hash. It has the same effect as setting the variable to equal empty curly braces. An example is shown below:</p>
 			<div class="panel panel-default">
@@ -74,22 +74,22 @@
                     <p>Example: Creating and assigning to a hash.</p>
                 </div>
             </div>
-		    <br/>
+		    <br />
 		    <h4>Printing a Hash</h4>
             <p>Below is an example showing how you can print out values from a hash. You state the name of the hash (spaceAgency) and then write within the square brackets the key of the value that you want to print out.</p>
 
 			<div class="panel panel-default">
                 <div class="panel-body examplecode">
                     <p>spaceAgency = {'USA' => 'NASA', 'Europe' =>  'ESA', 'India' => 'ISRA'}</p>
-                    <p>puts "#{spaceAgency['USA']}"                                   </p>
-                    <p>puts "#{spaceAgency['Europe']}"                                 </p>
+                    <p>puts "#{spaceAgency['USA']}"</p>
+                    <p>puts "#{spaceAgency['Europe']}"</p>
                 </div>
                 <div class="panel-footer">
                     <p>Example: Printing from a hash. Above prints NASA and ESA.</p>
                 </div>
             </div>
 		
-		    <br/>
+		    <br />
 		    <h4>Adding and Removing Items</h4>
             <p>You can add values to a hash once created by using the syntax below:</p>
 		
@@ -124,14 +124,14 @@
                 </div>
             </div>
 		
-		    <br/>
+		    <br />
 		    <h4>Length  function and Arrays</h4>
             <p>We can identify the number of key-value pairs in a hash by using the 'length' function. It is possible to have arrays within a hash as shown in the example below. Each pair counts as one, even if the value is an array. For more notes on arrays, read up earlier notes.</p>
 			<div class="panel panel-default">
                 <div class="panel-body examplecode">
-                    <p>spaceCraft = {}      </p>                            
-                    <p>spaceCraft [1969] ='Apollo 11'         </p>          
-                    <p>spaceCraft[1989]='Galileo' </p>
+                    <p>spaceCraft = {}</p>                            
+                    <p>spaceCraft [1969] ='Apollo 11'</p>          
+                    <p>spaceCraft[1989]='Galileo'</p>
                     <p>spaceCraft[1977]='Voyager 1'</p>
                     <p>puts "There are  #{spaceCraft.length} items in the spacecraft hash."</p>
                     <p>puts spaceCraft.inspect</p>
@@ -160,7 +160,7 @@
                     <p>space_hash={</p>
                     <p class="indent1">'moonLanding'=>['Neil Armstrong','Buzz Aldrin','Pete Conrad','Alan Bean']</p>  
                     <p class="indent1">1969=> 'Apollo',</p>
-                    <p class="indent1">=> 2012     </p>
+                    <p class="indent1">=> 2012</p>
                     <p>}</p>
                     <p>puts "#{space_hash['moonLanding'][0]}" </p> 
                     <p>puts space_hash.inspect</p>
@@ -182,7 +182,7 @@
                 </div>
             </div>
 		
-		    <br/>
+		    <br />
 		    <h4>Loops and Hashes</h4>
 		    <p>Below is an example code that uses loops with hashes. We begin by creating a hash with keys and values. Then we can use a loop such as a while, for or each loop to iterate through each item storing a key. This will execute the same sequence of statements on each of these items. For more details on loops, read up earlier notes on loops.</p>
             <p>The example code below will print the value of a key greater than 1970. </p>
@@ -213,8 +213,6 @@
                     <p>Example: Loops with hashes to print values of keys greater than 1970.</p>
                 </div>
             </div>
-        </div>
-        </div>
         </div>
     </body>
 </html>
