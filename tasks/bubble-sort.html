@@ -50,6 +50,43 @@
         </div>
         <p>Sorting lists is a very important concept in computer science and subsequently ther are many different sorting algorithms, one of the simplest is bubble sort. Bubble sort goes through a list comparing adjacent elements and swapping them around if they are in the wrong order, it is applied repeatedly until no more swaps are needed.</p>
         <hr />
+        <h3>Arrays</h3>
+        <p>Before we can sort lists we first need to understand how they are stored. An array stores a list of values in Ruby.</p>
+        <p>One way of viewing an array is a line of numbered boxes, these numbers are the indexes, they count from 0 and allow you to access the content inside each box<p>
+        <!-- Image of array indexing -->
+        <p>An array ca be created like so: </p>
+        <div class="panel panel-default">
+            <div class="panel-body examplecode">
+                <p>arr = [1,2,3,4,5]</p>
+            </div>
+            <div class="panel-footer">
+                <p>Creates an array with the values 1 to 5 and stores it in a variable arr.</p>
+            </div>
+        </div>
+        <p>And then values can be accessed like so:</p>
+        <div class="panel panel-default">
+            <div class="panel-body examplecode">
+                <p>arr[2]</p>
+            </div>
+            <div class="panel-footer">
+                <p>Gets the value in index 2 of the arr array, which will be 3 as indexing counts from 0</p>
+            </div>
+        </div>
+        <p>It is also useful to be able to go through every value in an array, you can do this with a for loop like so:</p>
+        <div class="panel panel-default">
+            <div class="panel-body examplecode">
+                <p>i = 0</p>
+                <p>sum = 0</p>
+                <p>while (i < arr.length)</p>
+                <p class="indent1">sum = sum + arr[i]</p>
+                <p>end</p>
+            </div>
+            <div class="panel-footer">
+                <p>Goes through the array adding all the values together to get a final sum of values</p>
+            </div>
+        </div>
+        <p>Now that you understand arrays a bit better here is the bubble sort algorithm</p>
+        <hr />
         <div class="panel panel-success">
             <div class="panel-heading">
                 <h3 class="panel-title">Bubble Sort Algorithm</h3>
