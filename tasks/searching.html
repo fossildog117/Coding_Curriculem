@@ -33,6 +33,9 @@
             text-indent: 2em;
         }
 
+        .indent2 {
+            text-indent: 4em;
+        }
     </style>
 
     <!--[if lt IE 9]>
@@ -48,41 +51,33 @@
     </ul>
 </nav>
 <div class="page-header">
-    <h1>If statements</h1>
+    <h1>Sequential Search</h1>
 </div>
 <div>
-    <p>We will introduce you to conditionals, these help the computer make informed decisions and we will start off with
-        some of the basics of conditionals</p>
-    <p>The most basic conditional statement is called an 'if statement', they are defined like so</p>
+    <p>We will introduce you to a method of searching known as sequential search</p>
+    <h2>Looping</h2>
+    <p>Here we will need to know a bit about looping, the main page on looping can be found <a
+        href="../detail/loops.html">here</a></p>
     <div class="panel panel-default">
         <div class="panel-body examplecode">
-            <p>x = 1</p>
-            <p>if x > 1</p>
-            <p class="indent1">print "x is greater than 1"</p>
-            <p>elsif x < -1 and x != 0</p>
-            <p class="indent1">print "x is a negative number smaller than -1" </p>
-            <p>else</p>
-            <p class="indent1">print "x is 1"</p>
+            <p>fruits = ['apples', 'oranges', 'pears', 'bananas', 'apricots', 'melons']</p>
+            <p>fruits.each do |fruit|</p>
+            <p>if fruit == 'pears'</p>
+            <p class="indent1">print "there are pears in the list"</p>
             <p>end</p>
         </div>
         <div class="panel-footer">
-            <p>This will print "x is 1". The program will first evaluate if x is greater than 1, then evaluate if x is 0
-                or smaller than 1, if both are false then it evaluate x to 1 since the conditionals have filtered out
-                the
-                possibility of x being greater
-                than 1 and smaller than 1 therefore the only number x can be is 1.</p>
+            <p>This will loop through the list and if the desired item is present then the program will print to the
+                console confirming the item we are looking is there</p>
         </div>
     </div>
 
-    <p>Below is a mini challenge where we are tasked with fixing a computer. Your task will be to create a program in
-        Ruby
-        that will help non-computer experts to fix their computers.</p>
-    <br/>
+    <p>Below is an animation showing how sequential search works to find an item in a list</p>
     <center>
-        <img src="../assets/images/computer.002.png" style="width:800px;height:600px;" align="middle">
+        <img src="../assets/images/search.gif" style="width:800px;height:600px;" align="middle">
     </center>
-    <br/>
-    <p>Experiment and create other programs using conditionals that help solve everyday problems.</p><br/>
+
+    <p>Experiment and create other programs using conditionals that find items in a list</p><br/>
 
     <div class="panel panel-primary">
         <div class="panel-heading">
@@ -103,15 +98,9 @@
         </div>
     </div>
     <script type="text/ruby">
-            <!--$arr = [[5,3,7,3,7,3,99,32,2],[8,45,3,2,4],[1,7,4,3,2],[4,6,4,23,6,3,6,3]]-->
 
-            <!--def printOutput-->
-                <!--output = ""-->
-                <!--$arr.each { |array|-->
-                    <!--output = output + array.inspect + "  ->  " + bubbleSort(array).inspect + "\n"-->
-                <!--}-->
-                <!--%x{document.getElementById('output').innerHTML = #{output};}-->
-            <!--end-->
+        // Code box
+
     </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
