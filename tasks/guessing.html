@@ -29,6 +29,12 @@
             .graphic {
                 text-align: center; }
 
+            .indent1 {
+                text-indent: 2em; }
+
+            .indent2 {
+                text-indent: 4em; }
+
         </style>
 
         <!--[if lt IE 9]>
@@ -47,24 +53,86 @@
             <h1>Guessing Game</h1>
         </div>
         <div>
-            <p>Now that you have got a bit more experience with Ruby let's try to create a simple game. In this game you will generate a random number between 1 and 100 and let the user try to guess it responding with too high or low if they fail. In order to do this you will need to create a loop which will keep going until they guess correctly.</p>
+            <p>Now that you have got a bit more experience with Ruby let's try to create a simple game. In this game you will generate a random number between 1 and 100 and let the user try to guess it responding with too high or low if they fail, and allowing them to keep guessing until they are correct.</p>
             <hr />
             <p>Since we are creating a number of functions and variables for this task it makes sense to make it into a class to group the different functions and variables together, this is better than using global variables as you are less likely to have clashes of names as only the class name will be global.</p>
             <p>A class is declared like so:</p>
-            <!-- Code box -->
+            <div class="panel panel-default">
+                <div class="panel-body examplecode">
+                    <p>class Guessing</p>
+                    <p></p>
+                    <p>end</p>
+                </div>
+                <div class="panel-footer">
+                    <p>This will create a class called Guessing</p>
+                </div>
+            </div>
             <p>And then you can add functions to it like so</p>
-            <!-- Code box -->
+            <div class="panel panel-default">
+                <div class="panel-body examplecode">
+                    <p>class Addition</p>
+                    <p class="indent1">def addOne(value)</p>
+                    <p class="indent2">value++</p>
+                    <p class="indent1">end</p>
+                    <p>end</p>
+                </div>
+                <div class="panel-footer">
+                    <p>This will create a class called Addition with a function addOne that takes one argument and return that plus one.</p>
+                </div>
+            </div>
             <p>Instance variables which are specific to each object created which are marked with an '@' before the variable name can be added like so:</p>
-            <!-- Code box -->
+            <div class="panel panel-default">
+                <div class="panel-body examplecode">
+                    <p>class ReadOnly</p>
+                    <p class="indent1">@value = 42</p>
+                    <br />
+                    <p class="indent1">def getValue</p>
+                    <p class="indent2">@value</p>
+                    <p class="indent1">end</p>
+                    <p>end</p>
+                </div>
+                <div class="panel-footer">
+                    <p>This will create a class called ReadOnly that stores the value 42 as an instance variable and provides a function getValue which returns it.</p>
+                </div>
+            </div>
             <p>And then objects can be created from a class and used like so:</p>
-            <!-- Code box -->
+            <div class="panel panel-default">
+                <div class="panel-body examplecode">
+                    <p>class Addition</p>
+                    <p class="indent1">def addOne(value)</p>
+                    <p class="indent2">value++</p>
+                    <p class="indent1">end</p>
+                    <p>end</p>
+                    <br />
+                    <p>addition = Addition.new</p>
+                    <p>puts("#{addition.addOne(41)}"
+                </div>
+                <div class="panel-footer">
+                    <p>This will create a class called Addition with a function addOne that takes one argument and return that plus one and then creates an object of that class called addition which it then uses to print the result of running addOne from the addition object on the number 41.</p>
+                </div>
+            </div>
             <p>However this can be customised to allow you to define your own function to run when the object is created, like so:</p>
-            <!-- Code box -->
+            <div class="panel panel-default">
+                <div class="panel-body examplecode">
+                    <p>class ReadOnly</p>
+                    <p class="indent1">def initialize (value)
+                    <p class="indent2">@value = value</p>
+                    <p class="indent1">end</p>
+                    <br />
+                    <p class="indent1">def getValue</p>
+                    <p class="indent2">@value</p>
+                    <p class="indent1">end</p>
+                    <p>end</p>
+                </div>
+                <div class="panel-footer">
+                    <p>This will create a class called ReadOnly that is instantiated with a value which it then stores and provides a getValue function to get the value</p>
+                </div>
+            </div>
             <hr />
             <p>You will also need to use random numbers for this task, you can generate random numbers like so:</p>
             <!-- code box -->
             <hr />
-            <p>Create a class called 'guessing' that is created with no arguments and has a guess function which will return -1 for less than, 1 for greater than and 0 for equals, and then try it out below:</p>
+            <p>Create a class called 'Guessing' that is created with no arguments and has a guess function which will return -1 for less than, 1 for greater than and 0 for equals, and then try it out below:</p>
             <p>Codebox</p>
         </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
