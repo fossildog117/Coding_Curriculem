@@ -143,7 +143,16 @@
             </div>
             <hr />
             <p>Create a class called 'Guessing' that is created with no arguments and has a guess function which will return -1 for less than, 1 for greater than and 0 for equals, and then try it out below:</p>
-            <p>Codebox</p>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">CodeBox <button type="button" onclick="Opal.eval(document.getElementById('code').value);" class="btn btn-default btn-default-lg codebutton">
+                        <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                    </button></h3>
+                </div>
+                <div class="panel-body">
+                    <textarea name="codebox" class="form-control" rows="5" id="code"></textarea>
+                </div>
+            </div>
         </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
