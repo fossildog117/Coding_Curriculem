@@ -142,10 +142,10 @@
                 </div>
             </div>
             <hr />
-            <p>Create a class called 'Guessing' that is created with no arguments and has a guess function which will return -1 for less than, 1 for greater than and 0 for equals, and then try it out below:</p>
+            <p>Create a class called 'Guessing' that is created with no arguments and has a guess function that takes a number as a guess and which will return -1 for less than, 1 for greater than and 0 for equals, and then try it out below:</p>
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title">CodeBox <button type="button" onclick="Opal.eval(document.getElementById('code').value);" class="btn btn-default btn-default-lg codebutton">
+                    <h3 class="panel-title">CodeBox <button type="button" onclick="Opal.eval(document.getElementById('code').value); var game = window.game = Opal.Game.$new();" class="btn btn-default btn-default-lg codebutton">
                         <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
                     </button></h3>
                 </div>
@@ -153,10 +153,28 @@
                     <textarea name="codebox" class="form-control" rows="5" id="code"></textarea>
                 </div>
             </div>
+
+            <div class="graphic">
+                <h3>Guessing Game</h3>
+                <h4></h4>
+                <input type="text" id="guess" onclick="window.game.$guess(document.getElementById('guess').value);"></input>
+                <button>Guess</button>
+            </div>
         </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="../assets/js/bootstrap.min.js"></script>
+        <script type="text/ruby">
+            class Game
+                def initialize
+                    @guessing = Guessing.new
+                end
+
+                def guess
+                    @guessing.guess(guess)
+                end
+            end
+        </script>
     </body>
 </html>
