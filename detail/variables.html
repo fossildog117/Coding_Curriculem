@@ -46,7 +46,42 @@
             <h1>Variables</h1>
         </div>
         <div>
-        
+            <h3>Types of variables</h3>
+            <p>There are 5 types of variables you can create in Ruby: local, instance, class, global and constants.</p>
+            <p>Local variables are variables that are only accessible from within the scope they are defined such as in a function. They are indicates by starting with a lowercase letter and are typically named in camel caps which means the first letter is lower case and then the start of each new word is capitalised e.g. capitalCity.</p>
+            <pre>number = 42</pre>
+            <p>Instance variables are variables specific to an object of a class, they are defined in a class but each object has their own values for them. Instance variables start with an '@' symbol, once again they are typically named in camel caps.</p>
+            <pre>@number = 42</pre>
+            <p>Class variables are variables that are shared by all variables of a class (and child classes which will be explained later) so they are declared in the class and then any objects created of that class can access that variable. Class variables start with two '@' symbols and are normally named in camel caps.</p>
+            <pre>@@number = 42</pre>
+            <p>Global variables are variables that can be accessed anywhere in the program, they should be avoided as far as possible as they can make code harder to understand. Global variables start with a '$' symbol and normally are named in camel caps.</p>
+            <pre>$number = 42</pre>
+            <p>Constants are variables that cannot change so the value they are created with will always be their value. Constants start with an upper case letter and it is common to name them in all capital letters, spearating words with '_'.</p>
+            <pre>NUMBER = 42</pre>
+            <hr />
+            <p>Variables can store any object, and how to do that will be explained later, here however we will discuss some basic literals, which allow you to easily create certain objects</p>
+            <br />
+            <p>Numbers can be used just by typing the number and Ruby will create an object suitable to hold the value, they can be created like so:</p>
+            <div class="panel panel-default">
+                <div class="panel-body examplecode">
+                    <p>life = 42</p>
+                    <p>pi = 3.14159265358979</p>
+                </div>
+                <div class="panel-footer">
+                    <p>This defines a variable called life ith a value of 42 and pi with a value of 3.14159265358979</p>
+                </div>
+            </div>
+            <p>You can also create String objects to store text as a literal using speech marks or quotation marks like so:</p>
+            <div class="panel panel-default">
+                <div class="panel-body examplecode">
+                    <p>string = "Strings are cool"</p>
+                    <p>ruby = "Ruby is cooler"</p>
+                </div>
+                <div class="panel-footer">
+                    <p>This defines two variables, string and ruby containing text as a string.</p>
+                </div>
+            </div>
+            <p>Going beyond this there are more manipulations you can carry out on strings as a literal which will be described later</p>
         </div>
     </body>
 </html>
