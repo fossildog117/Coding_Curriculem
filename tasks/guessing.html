@@ -169,12 +169,10 @@
             class Game
                 def initialize
                     @guessing = Guessing.new
-                    puts("Game created")
                 end
 
                 def guess(attempt)
                     result = @guessing.guess(attempt)
-                    puts("#{attempt}")
                     if (result == 0)
                         %x{ document.getElementById('output').innerHTML = "Correct!";
                           }
