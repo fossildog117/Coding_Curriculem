@@ -75,13 +75,21 @@
             <div class="panel panel-default">
                 <div class="panel-body examplecode">
                     <p>string = "Strings are cool"</p>
-                    <p>ruby = "Ruby is cooler"</p>
+                    <p>ruby = 'Ruby is cooler'</p>
                 </div>
                 <div class="panel-footer">
                     <p>This defines two variables, string and ruby containing text as a string.</p>
                 </div>
             </div>
-            <p>Going beyond this there are more manipulations you can carry out on strings as a literal which will be described later</p>
+            <p>Going beyond this you can also display other values within the string using the syntax #{ expression }, however you have to use speech marks to do this, here are some examples:</p>
+            <div class="panel panel-default">
+                <div class="panel-body examplecode">
+                    <p>number = 42</p>
+                    <p>life = "The meaning of life is #{ number }"</p>
+                    <p>addition = "2 plus 3 equals #{ 2 + 3}"</p>
+                </div>
+                <div class="panel-footer">
+                    <p>Here a variable called number is declared with the value 42 and the life variable uses that to create the string "The meaning of life is 42". A variable named addition is also defined that evaluates an expression to create a string "2 plus 3 equals 5".</p>
         </div>
     </body>
 </html>
