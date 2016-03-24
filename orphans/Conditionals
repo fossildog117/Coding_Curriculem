@@ -51,7 +51,16 @@
  <li> >  (Check if the value on the left is strictly greater than the value on the right)
  <li> >= (Check if the value on the left is greater than or equal to the value on the right) </li>
 <p>We can also provide alternate options for the program if the initial condition isn’t met using the <b>else</b> or <b>elseif</b> functions.</p>
-<p>For example: 
+<p>For example: </p>
+<p><b>x = 5</b></p>
+<p><b>if x == 5 </b></p>
+<p><b>   puts "This is great!"</b></p>
+<p><b>elseif x <= 4 </b></p>
+<p><b>   puts "Nope, there's no Spaceman to say hello to!"</b></p>
+<p><b>elseif x >= 6 </b></p>
+<p><b>   puts "There are too many Spacemen, something has gone wrong!"</b></p>
+<p> end </p>
+
  
 
 </body>
