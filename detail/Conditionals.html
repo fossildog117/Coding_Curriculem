@@ -52,21 +52,29 @@
  <li> >= (Check if the value on the left is greater than or equal to the value on the right) </li>
 </ul>
 <p>We can also provide alternate options for the program if the initial condition isn’t met using the <b>else</b> or <b>elseif</b> functions.</p>
-<p>For example: </p>
-<p><b>x = 5</b></p>
-<p><b>if x == 5 </b></p>
+<p>Example 1: </p>
+<p><b> x = 5</b></p>
+<p><b> if x == 5 </b></p>
 <p><b>   puts "This is great!"</b></p>
-<p><b>elseif x <= 4 </b></p>
+<p><b> elseif x <= 4 </b></p>
 <p><b>   puts "Nope, there's no Spaceman to say hello to!"</b></p>
-<p><b>elseif x >= 6 </b></p>
+<p><b> elseif x >= 6 </b></p>
 <p><b>   puts "There are too many Spacemen, something has gone wrong!"</b></p>
 <p> end </p>
 <p>Here, since x is 5, the output will be "This is great!". If the value of x is edited to something less than 5, then, due to the  </p>
+<p>Example 2:</p>
+<p><b> x = 5 </b></p>
+<p><b> if x < 5</b></p>
+<p><b>   puts "We're almost there"</b></p>
+<p><b> else</b></p>
+<p><b>   puts "We're here!"</b></p>
+<p> end </p>
+<p>Here, since x is 5, the condition isn't satisfied so the code goes to the "else" function and will output "We're here!"</p>
 <h2>Unless Statements</h2>
 <p>Unless statements are the opposites of if statements where the function will be perfomed <b>unless</b> the condition is fulfilled.</p>
 <p>For example:</p>
-<p><b>j = 3</b></p>
-<p><b>unless j = 15</b></p>
+<p><b> j = 3</b></p>
+<p><b> unless j = 15</b></p>
 <p><b>   puts "j is not 15"</b></p>
 <p> end </p>
 <p>We have stated that j has a value of 3. The unless statment's condition is such that "j is not 15" will be outputted so long as (shockingly) j is not 15.</p>
@@ -81,7 +89,26 @@
   <li> !   (reverses the logic of the statement so that it's false when true and true when false)</li>
   <li> not (same as !)</li>
 </ul>
-<p>For example</p>
+<p>Here are some examples to help illustrate how these would be used:</p>
+<p>Example 1:</p>
+<p><b> y = 12 </b></p>
+<p><b> z = 5  </b></p>
+<p><b> if (y <= 15 || z >= 15) </b></p>
+<p><b>   puts "Blast off!"  </b></p>
+<p><b> else</b></p>
+<p><b>   puts "There's a fuel leak, we are unable to take off for now"</b></p>
+<p> end</p>
+<p>The || operator is being used here ("||" could have been replaced by "or" for the same functionality"). As one of the conditions is fulfilled the output will be "Blast off!"</p>
+<p>Example 2:</p>
+<p><b> y = 12 </b></p>
+<p><b> z = 5 </b></p>
+<p><b> if !(y <=15 || z >= 15) </b></p>
+<p><b>   puts "There's a problem with the carburetor </b></p>
+<p><b> elsif (y = 12 && z == 5)</b></p>
+<p><b>   puts "There's a problem with the lunar module"</b></p>
+<p> end </p>
+<p>The ! operator reverses the logic of the conditions. Thus, here the ! causes the true false to be recognised as false, thus the output cannot be "There's a problem with the carburetor". As both the conditions in the elseif statement are satisfied, the output will be "There's a problem with the lunar module".</p>
+
 
 
 </body>
